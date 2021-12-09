@@ -18,7 +18,7 @@ namespace ClinicConsoleApp
         //    this.lastName = lastName;
         //    this.position = position;
         //}
-        public Employee() { }
+        //public Employee() { }
 
     }
 }

@@ -72,7 +72,7 @@ void PresentAllDoctors()
     }
 }
 // add Patient \\
-void AddPetientToDoctor()
+void AddPetientToDoctor(string name)
 {
     string newLine;
     FileStream fs = new FileStream(@$"C:\Doctor\{name}.txt", FileMode.Open);
@@ -190,7 +190,7 @@ void MainFunction()
             CreateNewObject();
             break;
         case 2:
-            //AddPetientToDoctor(Console.ReadLine());
+            AddPetientToDoctor(Console.ReadLine());
             break;
         case 3:
             PresentDoctorByName(Console.ReadLine());
@@ -208,7 +208,10 @@ void MainFunction()
             break;
     }
 }
-
+Employee ee = new Employee();
+ee.firstName="jjjjj";
+ee.lastName = "vvvv";
+Console.WriteLine(ee.firstName,ee.lastName);
 /// 
 //Schedule schedule = new Schedule();
 //schedule.diary = new int[int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine())];
